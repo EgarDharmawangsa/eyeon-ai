@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "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";
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 async function sendMessage() {
