@@ -1,3 +1,10 @@
+:root {
+    --dark-blue: rgb(6, 17, 27);
+    --blue: rgb(11, 31, 49);
+    --light-blue: rgb(30, 87, 139);
+    --super-light-blue: rgb(46, 132, 212);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +13,7 @@
 
 body {
     height: 100vh;
-    background-color: rgb(61, 63, 65);
+    background-color: var(--dark-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +30,8 @@ h2 {
     width: 90%;
     max-width: 600px;
     height: 30rem;
-    background-color: rgb(38, 38, 39);
+    background-color: var(--blue);
+    box-shadow: black 0px 5px 15px;
     border: 2px solid white;
     border-radius: 10px;
     display: flex;
@@ -50,12 +58,12 @@ h2 {
 }
 
 .bubble-user {
-    background-color: #4CAF50;
+    background-color: var(--super-light-blue);
     align-self: flex-end;
 }
 
 .bubble-ai {
-    background-color: #204b21;
+    background-color: var(--light-blue);
     align-self: flex-start;
 }
 
@@ -69,7 +77,7 @@ h2 {
     padding: 10px;
     border: 2px solid white;
     border-radius: 5px 0 0 5px;
-    background-color: rgb(38, 38, 39);
+    background-color: var(--blue);
     color: white;
     font-size: 1rem;
     outline: none;
@@ -81,7 +89,7 @@ h2 {
     border: 2px solid white;
     border-radius: 0 5px 5px 0;
     background-color: white;
-    color: rgb(38, 38, 39);
+    color: var(--dark-blue);
     font-weight: bold;
     cursor: pointer;
 }
